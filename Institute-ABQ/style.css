@@ -1,13 +1,17 @@
+body {
+  background-color: black;
+}
+
 .top,
 nav,
 a {
   text-decoration: none;
-  padding: 15px;
-  margin: 12px;
+  padding: 10px;
+  margin: 8px;
   text-align: right;
   font-size: 20px;
   color: azure;
-  background-color: green;
+  background-color: rgb(10, 10, 10);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .top,
@@ -16,19 +20,59 @@ a:hover {
   color: dodgerblue;
 }
 .kong,
-h1,
 span {
+  background-image: url(last.jpg);
+  width: 94%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kong,
+h1 {
   padding: 40px;
   margin: 15px;
-
   font-size: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: darkorange;
+  color: rgb(241, 245, 246);
 }
-.para,
+button {
+  padding: 10px;
+  margin: 8px;
+  background-color: aqua;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+button:hover {
+  background-color: cornflowerblue;
+  color: aliceblue;
+  cursor: pointer;
+}
 p {
   padding: 40px;
   margin: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1em;
+  color: rgb(243, 240, 240);
+  font-weight: bold;
+
+  font-size: 20px;
+}
+
+footer,
+.foot {
+  background-color: black;
+  color: aliceblue;
+  padding: 10px;
+  margin: 8px;
+  text-decoration: none;
+  text-align: left;
 }
