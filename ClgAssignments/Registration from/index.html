@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tech Trivia 2023 Registration</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      background-color: transparent;
+      height: 100px;
+      padding: 10px;
+    }
+    header h1 {
+      margin-top: 30px;
+      color: rgb(203, 3, 3);
+      text-transform: uppercase;
+      font-size: 3rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .background {
+      background: rgba(70, 88, 248, 0.575)
+        url("https://images.collegedunia.com/public/college_data/images/campusimage/1621416124IMG_0849_HDR.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-blend-mode: darken;
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(2, 57, 255, 0.733);
+      width: 800px;
+      height: 600px;
+      padding: 20px;
+      margin: auto;
+      margin-top: 50px;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-weight: 800px;
+      font-size: 1.6rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    input[type="email"],
+    input[type="text"] {
+      padding: 12px;
+      font-size: 1.1rem;
+      background-color: rgb(254, 253, 253);
+      border: none;
+      border-radius: 30px;
+      width: 500px;
+    }
+    select {
+      padding: 6px;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      width: 150px;
+    }
+    input[type="file"] {
+      font-size: 1.1rem;
+      width: 350px;
+      max-width: 25%;
+      color: #444;
+      padding: 5px;
+      background: #fff;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      width: 20%;
+      padding: 10px;
+      color: white;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      border-bottom: 8px solid rgb(3, 8, 106);
+      border-right: 8px solid rgb(3, 8, 106);
+      background-color: rgb(1, 10, 171);
+      transition: all 3ms ease-in;
+    }
+    input[type="submit"]:hover {
+      transform: translateY(-3%);
+      background-color: rgba(3, 8, 106, 0.735);
+    }
+  </style>
+  <body class="background">
+    <header>
+      <h1>Tech Trivia 2023 Registration</h1>
+    </header>
+    <div class="main">
+      <form action="1st_html.html" method="POST" enctype="multipart/form-data">
+        <label for="full_name">Full Name:</label>
+        <input
+          type="text"
+          id="full_name"
+          name="full_name"
+          placeholder="Enter Your Full Name"
+          required
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Your Valid Email Id"
+          required
+        /><br /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="Enter Your Valid Phone Number"
+          required
+        /><br /><br />
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br /><br />
+
+        <label>Interests:</label>
+        <input
+          type="checkbox"
+          id="programming"
+          name="interests[]"
+          value="programming"
+        />
+        <label for="programming">Programming</label>
+
+        <input type="checkbox" id="design" name="interests[]" value="design" />
+        <label for="design">Design</label>
+
+        <input
+          type="checkbox"
+          id="business"
+          name="interests[]"
+          value="business"
+        />
+        <label for="business">Business</label><br /><br />
+
+        <label for="major">Select Department:</label>
+        <select id="major" name="major">
+          <option value="SELECT">SELECT</option>
+          <option value="BCA">BCA</option>
+          <option value="B.TECH">B.TECH</option>
+          <option value="BSC">BSC.COMPUTER SCIENCE</option></select
+        ><br /><br />
+
+        <label for="project">Upload Project:</label>
+        <input type="file" id="project" name="upload" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
