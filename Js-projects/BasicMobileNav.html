@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Responsive navbar</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+      .navbar {
+        background-color: blue;
+        position: fixed;
+        width: 100%;
+      }
+      .navbar ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+      }
+      .navbar ul h1 {
+        margin-right: 68%;
+        font-size: 2rem;
+      }
+      .navbar ul li {
+        list-style-type: none;
+        padding: 15px;
+        margin-top: 0px;
+        font-size: 1.5rem;
+      }
+
+      .burger {
+        position: absolute;
+        top: 5%;
+        left: 90%;
+        visibility: hidden;
+      }
+      .doots {
+        background-color: white;
+        width: 2px;
+        height: 2px;
+        border: none;
+        border-radius: 30px;
+        padding: 5px;
+        margin: 5px;
+      }
+      @media only screen and (max-width: 1000px) {
+        .burger {
+          position: absolute;
+          top: 32%;
+          left: 90%;
+          visibility: hidden;
+        }
+
+        .navbar {
+          height: 20%;
+        }
+
+        .navbar ul {
+          display: flex;
+          flex-direction: column;
+          margin-right: 5%;
+        }
+        .navbar ul li {
+          visibility: hidden;
+        }
+        .navbar ul h1 {
+          text-align: center;
+          margin: 40px;
+          font-size: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <h1>ABCD</h1>
+        <li>Home</li>
+        <li>Menu</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="burger">
+        <div class="doots"></div>
+        <div class="doots"></div>
+        <div class="doots"></div>
+      </div>
+    </nav>
+    <script>
+      let burgerBtn = document.querySelector(".navbar");
+      let navHeight = document.querySelector(".navbar");
+      let listVisibility = document.getElementsByTagName("li");
+      let check = 0;
+      burgerBtn.addEventListener("click", function () {
+        if (check == 0) {
+          navHeight.style.height = "58%";
+          for (var i = 0; i < listVisibility.length; i++) {
+            listVisibility[i].style.visibility = "visible";
+          }
+          check = 1;
+        } else {
+          navHeight.style.height = "20%";
+          for (var i = 0; i < listVisibility.length; i++) {
+            listVisibility[i].style.visibility = "hidden";
+          }
+          check = 0;
+        }
+      });
+    </script>
+  </body>
+</html>
