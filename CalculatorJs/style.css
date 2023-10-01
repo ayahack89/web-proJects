@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  box-sizing: border-box;
+}
+.bigbrother {
+  border: 2px outset white;
+  width: 27vw;
+  margin: auto;
+  margin-top: 40px;
+  background-color: rgb(49, 49, 49);
+  height: 84vh;
+  padding-top: 10px;
+}
+
+.screen {
+  background-color: white;
+  width: 25.8vw;
+  height: 15vh;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  border: 2px outset white;
+}
+
+.buttonA {
+  border: 2px outset white;
+  padding: 30px;
+  padding-bottom: 35px;
+  font-size: 1.5rem;
+  width: 100%;
+  color: white;
+  background-color: rgb(90, 90, 90);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.buttonA:hover {
+  background-color: rgba(90, 90, 90, 0.76);
+  cursor: pointer;
+}
+.buttonB {
+  border: 2px solid white;
+  padding: 30px;
+  font-size: 1.8rem;
+  color: black;
+  background-color: rgb(230, 152, 8);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonB:hover {
+  background-color: rgba(230, 152, 8, 0.87);
+  cursor: pointer;
+}
+.equal {
+  padding-left: 40px;
+}
+
+/* mobile responsive */
+
+@media only screen and (max-width: 1000px) {
+  .screen {
+    position: absolute;
+    left: 8px;
+    background-color: white;
+    width: 95vw;
+    height: 15vh;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .bigbrother {
+    border: none;
+    margin-top: 40px;
+    background-color: black;
+    height: 84vh;
+    padding-top: 10px;
+  }
+  table {
+    border: 2px outset white;
+    position: absolute;
+    left: 10px;
+    top: 25%;
+  }
+
+  .buttonA {
+    border: 2px outset white;
+    padding: 20px;
+    padding-bottom: 35px;
+    font-size: 1.8rem;
+    color: white;
+    background-color: rgb(90, 90, 90);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .buttonA:hover {
+    background-color: rgba(90, 90, 90, 0.76);
+    cursor: pointer;
+  }
+  .buttonB {
+    border: 2px solid white;
+    padding: 25px;
+    padding-bottom: 30px;
+    font-size: 1.8rem;
+    color: black;
+    background-color: rgb(230, 152, 8);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .buttonB:hover {
+    background-color: rgba(230, 152, 8, 0.87);
+    cursor: pointer;
+  }
+  .equal {
+    padding-left: 40px;
+  }
+}
