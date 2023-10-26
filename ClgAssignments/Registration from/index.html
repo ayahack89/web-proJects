@@ -8,17 +8,24 @@
       margin: 0;
       padding: 0;
     }
-    header {
-      text-align: center;
-      background-color: transparent;
-      height: 100px;
+    .container {
+      width: 1000px;
       padding: 10px;
+      margin: auto;
+      border: 2px solid blue;
     }
-    header h1 {
-      margin-top: 30px;
-      color: rgb(203, 3, 3);
+
+    h1 {
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      border: 2px solid white;
+      color: white;
       text-transform: uppercase;
-      font-size: 3rem;
+      background-color: blue;
+      font-size: 2rem;
+      text-align: center;
+      padding: 10px;
       font-family: Arial, Helvetica, sans-serif;
     }
     .background {
@@ -32,134 +39,169 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(2, 57, 255, 0.733);
-      width: 800px;
-      height: 600px;
+      background-color: white;
+      width: 380px;
+      height: 500px;
       padding: 20px;
       margin: auto;
       margin-top: 50px;
       border: none;
-      border-radius: 20px;
-      color: white;
+      color: black;
       font-weight: 800px;
-      font-size: 1.6rem;
+      font-size: 1.1rem;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
     input[type="email"],
     input[type="text"] {
-      padding: 12px;
+      padding: 8px;
       font-size: 1.1rem;
-      background-color: rgb(254, 253, 253);
-      border: none;
-      border-radius: 30px;
-      width: 500px;
+      background-color: white;
+      border: 1px solid black;
+      width: 90%;
+      margin-left: 10px;
+    }
+    label {
+      margin-left: 10px;
     }
     select {
-      padding: 6px;
+      padding: 5px;
       background-color: white;
       color: black;
-      border: none;
-      border-radius: 30px;
-      font-size: 1.2rem;
-      width: 150px;
+      border: 1px solid black;
+      font-size: 1rem;
+      width: 90%;
+      margin-left: 10px;
     }
     input[type="file"] {
-      font-size: 1.1rem;
+      font-size: 1rem;
       width: 350px;
-      max-width: 25%;
-      color: #444;
+      width: 80%;
+      color: black;
       padding: 5px;
       background: #fff;
-      border-radius: 5px;
+      border: 1px solid black;
+      margin-left: 10px;
     }
     input[type="submit"] {
-      width: 20%;
+      width: 90%;
       padding: 10px;
       color: white;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-transform: uppercase;
-      border-bottom: 8px solid rgb(3, 8, 106);
-      border-right: 8px solid rgb(3, 8, 106);
-      background-color: rgb(1, 10, 171);
+      border: 2px outset blue;
+      border-radius: 5px;
+      background-color: blue;
       transition: all 3ms ease-in;
+      margin-left: 10px;
     }
     input[type="submit"]:hover {
-      transform: translateY(-3%);
+      transform: translateY(2%);
       background-color: rgba(3, 8, 106, 0.735);
+      cursor: pointer;
+    }
+    footer {
+      background-color: blue;
+      color: white;
+      font-size: 1.1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 10px;
+      margin-bottom: 0px;
+      margin-top: 20px;
     }
   </style>
-  <body class="background">
-    <header>
+  <body>
+    <div class="container background">
       <h1>Tech Trivia 2023 Registration</h1>
-    </header>
-    <div class="main">
-      <form action="1st_html.html" method="POST" enctype="multipart/form-data">
-        <label for="full_name">Full Name:</label>
-        <input
-          type="text"
-          id="full_name"
-          name="full_name"
-          placeholder="Enter Your Full Name"
-          required
-        /><br /><br />
 
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter Your Valid Email Id"
-          required
-        /><br /><br />
+      <div class="main">
+        <form action="" method="POST">
+          <label for="full_name"
+            >Full Name: <br />
+            <input
+              type="text"
+              id="full_name"
+              name="full_name"
+              placeholder="Enter Your Full Name"
+              required
+            />
+          </label>
+          <br />
 
-        <label for="phone">Phone Number:</label>
-        <input
-          type="text"
-          id="phone"
-          name="phone"
-          placeholder="Enter Your Valid Phone Number"
-          required
-        /><br /><br />
+          <label for="email"
+            >Email: <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Valid Email Id"
+              required /></label
+          ><br />
 
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="male" />
-        <label for="male">Male</label>
+          <label for="phone"
+            >Phone Number: <br />
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Enter Your Valid Phone Number"
+              required /></label
+          ><br />
 
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label><br /><br />
+          <label
+            >Gender:
+            <input type="radio" id="male" name="gender" value="male" />
+            Male
+            <input type="radio" id="female" name="gender" value="female" />
+            Female </label
+          ><br />
 
-        <label>Interests:</label>
-        <input
-          type="checkbox"
-          id="programming"
-          name="interests[]"
-          value="programming"
-        />
-        <label for="programming">Programming</label>
+          <label
+            >Interests:- <br />
+            <input
+              type="checkbox"
+              id="programming"
+              name="interests"
+              value="programming"
+            />
 
-        <input type="checkbox" id="design" name="interests[]" value="design" />
-        <label for="design">Design</label>
+            Programming
 
-        <input
-          type="checkbox"
-          id="business"
-          name="interests[]"
-          value="business"
-        />
-        <label for="business">Business</label><br /><br />
+            <input
+              type="checkbox"
+              id="design"
+              name="interests"
+              value="design"
+            />
+            Design
 
-        <label for="major">Select Department:</label>
-        <select id="major" name="major">
-          <option value="SELECT">SELECT</option>
-          <option value="BCA">BCA</option>
-          <option value="B.TECH">B.TECH</option>
-          <option value="BSC">BSC.COMPUTER SCIENCE</option></select
-        ><br /><br />
+            <input
+              type="checkbox"
+              id="business"
+              name="interests[]"
+              value="business"
+            />
+            Business <br />
+          </label>
 
-        <label for="project">Upload Project:</label>
-        <input type="file" id="project" name="upload" /><br /><br />
-        <input type="submit" value="Submit" />
-      </form>
+          <label for="major"
+            >Select Department: <br />
+            <select id="major" name="major">
+              <option value="SELECT">SELECT</option>
+              <option value="BCA">BCA</option>
+              <option value="B.TECH">B.TECH</option>
+              <option value="BSC">BSC.COMPUTER SCIENCE</option>
+            </select></label
+          >
+          <br />
+
+          <label for="project"
+            >Upload Project: <br />
+            <input type="file" id="project" name="upload" /><br /><br />
+            <input type="submit" value="Submit"
+          /></label>
+        </form>
+      </div>
+      <footer>&copy; Brainware University 2023</footer>
     </div>
   </body>
 </html>
