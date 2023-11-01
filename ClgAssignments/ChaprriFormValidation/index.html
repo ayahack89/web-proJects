@@ -115,7 +115,7 @@
           alert("PLEASE ENTER YOUR NAME!");
           return false;
         }
-        if (correctLatters !== userName) {
+        if (!correctLatters.test(userName)) {
           alert("PLEASE ENTER ONLY LATTERS!");
           return false;
         }
