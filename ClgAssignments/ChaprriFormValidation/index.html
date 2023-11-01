@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bolder;
+    }
+    .container {
+      margin: auto;
+      width: 400px;
+
+      display: grid;
+    }
+    h3 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    label {
+      font-size: 1.2rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 5px;
+      width: 70%;
+      border: 1px inset black;
+      font-family: "Courier New", Courier, monospace;
+    }
+    input[type="submit"] {
+      padding: 5px;
+      font-size: 1rem;
+      background-image: linear-gradient(white, gray);
+      border-radius: 5px;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bolder;
+      margin-top: 10px;
+      transition: all 4ms ease-in;
+    }
+    input[type="submit"]:hover {
+      cursor: pointer;
+      transform: translateY(2%);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form
+        action=""
+        method=""
+        name="myForm"
+        onsubmit="return formValidation()"
+      >
+        <h3>CREATE YOUR ACCOUNT</h3>
+        <label for="uname">
+          UserName: <br />
+          <input
+            type="text"
+            name="uname"
+            id="uname"
+            placeholder="Enter a user name"
+          /> </label
+        ><br />
+
+        <label for="email">
+          Email: <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your valid email"
+          /> </label
+        ><br />
+        <label for="password">
+          Password: <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter a strong password"
+          /> </label
+        ><br />
+        <label for="cpassword">
+          Confirm Password: <br />
+          <input
+            type="password"
+            name="cpassword"
+            id="cpassword"
+            placeholder="Retype your password"
+          /> </label
+        ><br />
+        <input type="submit" name="submit" value="SignIn" />
+      </form>
+    </div>
+
+    <script>
+      //Form Validation
+      function formValidation() {
+        //Correct email;
+        var correctLatters = /^[A-Za-z]+$/;
+        var correctEmail =
+          /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        //User Input Id's
+        var userName = document.forms["myForm"]["uname"].value;
+        var userEmail = document.forms["myForm"]["email"].value;
+        var userPassword = document.forms["myForm"]["password"].value;
+        var userCPassword = document.forms["myForm"]["cpassword"].value;
+
+        //Name validation;
+        if (userName === "") {
+          alert("PLEASE ENTER YOUR NAME!");
+          return false;
+        }
+        if (correctLatters !== userName) {
+          alert("PLEASE ENTER ONLY LATTERS!");
+          return false;
+        }
+        //Email validation;
+        if (userEmail === "") {
+          alert("PLEASE ENTER YOUR EMAIL ID!");
+          return false;
+        }
+        if (!correctEmail.test(userEmail)) {
+          alert("PLEASE ENTER A VALID EMAIL ID!");
+          return false;
+        }
+        //Password validation;
+        if (userPassword === "") {
+          alert("PLEASE ENTER A STRONG PASSWORD!");
+          return false;
+        }
+        if (userPassword.length <= 8) {
+          alert("PLEASE ENTER ATLEAST 9 CHARACTERS! ");
+          return false;
+        }
+        //Confirm password validation;
+        if (userCPassword === "") {
+          alert("PLEASE RETYPE YOUR PASSWORD!");
+          return false;
+        }
+        if (userCPassword !== userPassword) {
+          alert("YOUR PASSWORD IS NOT MATCH!");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
