@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h1 {
+        font-family: cursive;
+      }
+    </style>
+    <title>Switch Case | Statement</title>
+  </head>
+  <body>
+    <h1>Today! we know about some fruits!</h1>
+    <script>
+      var fruitype = prompt("Which fruits you need?");
+      switch (fruitype) {
+        case "Apple":
+          console.log("Apple 60rs kilo.");
+          break;
+        case "Bannana":
+          console.log("Bannana 35 rs kilo.");
+          break;
+        case "Angur":
+          console.log("Angur 80rs kilo.");
+          break;
+        case "Mango":
+          console.log("Mango 300rs Dozen.");
+        case "Papita":
+          console.log("Papita 200rs dozon.");
+          break;
+        default:
+          console.log(
+            ` Today all ${fruitype} are sale , now we have no fruits. `
+          );
+      }
+      console.log("Or anything else, you need ");
+    </script>
+  </body>
+</html>
