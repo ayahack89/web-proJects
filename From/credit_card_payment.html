@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in | Credit Card Payment</title>
+  </head>
+  <body>
+    <nav>
+      <form action="">
+        <h2>Credit Card Payment</h2>
+        <p><i>CVC code is required.</i></p>
+        <p>
+          Card Holder's Name
+          <input type="text" name="name" id="name" />
+        </p>
+        <p>
+          <select name="card_type" id="card_type">
+            <option value="">--Select Card Type--</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">Rupay</option>
+            <option value="mastercard">Mastercard</option>
+          </select>
+        </p>
+        <p>
+          Card Number
+          <input type="password" name="card_number" id="card_number" />
+        </p>
+        <p>
+          Card Exp. Data
+          <input type="date" name="data" id="data" />
+        </p>
+        <p>
+          Amount
+          <input type="number" name="number" id="number" />
+        </p>
+        <p>
+          <u>Or you have another option to pay :</u>
+          <input type="button" value="Pay Pal" />
+        </p>
+        <p>
+          <input type="button" value="PAY NOW" />
+        </p>
+      </form>
+    </nav>
+  </body>
+</html>

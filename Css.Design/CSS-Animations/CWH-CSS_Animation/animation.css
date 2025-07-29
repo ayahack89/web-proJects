@@ -1,0 +1,43 @@
+.container {
+  background-color: blueviolet;
+}
+.box {
+  background-color: blue;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  /* animation ayanabha
+  animation-name: ayanabha;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+   animation-timing-function: ease-out;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-direction: reverse;*/
+  animation-name: ayanabha-II;
+  animation-duration: 5s;
+  animation-iteration-count: 4;
+}
+@keyframes ayanabha-II {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  30% {
+    top: 150px;
+    left: 0px;
+  }
+  50% {
+    top: 250px;
+    left: 0px;
+  }
+  80% {
+    top: 250px;
+    left: 250px;
+  }
+  100% {
+    top: 0px;
+    left: 250px;
+  }
+}

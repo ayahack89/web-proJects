@@ -1,0 +1,80 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 35px;
+	padding-right: 10px;
+	padding-top: 11px;
+	padding-bottom: 10px;
+	font-size: 1.1rem;
+	background-image:linear-gradient(to right , #cc2c2c, #aa0e0e, #7e0505);
+	color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+	display: flex;
+}
+
+.nav-item {
+	margin-left: 11px;
+	margin-right: 11px;
+}
+a {
+	text-decoration: none;
+	color: aliceblue;
+}
+.text{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.overlay{
+    background-color: rgba(10, 95, 116, 0.153);
+}
+.bg{
+    background-image: url("Background-image/Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.Tourism{
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#aa0e0e
+}
+.Contact{
+    font-size: 70px;
+    color:firebrick;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    font-size: 15px;
+}
+.TEXT-2{
+    text-align: center;
+    padding-top: 400px;
+    padding-bottom: 400px;
+}
+.OVERLAY-2 {
+    background-color: rgba(10, 95, 116, 0.452);
+}
+.GB{
+    background-image: url("Background-image/Contact-US.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.Lorem{
+    font-size: 1.0rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(216, 55, 55);
+    font-weight: lighter;
+}

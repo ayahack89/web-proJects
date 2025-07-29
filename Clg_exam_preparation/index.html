@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Basic Calculator Using JavaScript with Validation</title>
+     <style>
+          body {
+               background-color: gainsboro;
+          }
+
+          .center {
+               width: 210px;
+               margin: auto;
+               padding: 20px;
+               margin-top: 5%;
+               background-color: whitesmoke;
+               border: 2px outset whitesmoke;
+          }
+
+          input[type="number"] {
+               padding: 10px;
+               margin-left: 10px;
+               width: 80%;
+               border: 2px inset gainsboro;
+          }
+
+          input[type="submit"] {
+               padding: 5px;
+               width: 15%;
+               border: 2px outset gainsboro;
+               background-color: gainsboro;
+               font-weight: bolder;
+               font-size: 1rem;
+          }
+
+          input[type="submit"]:hover {
+               cursor: pointer;
+               background-image: linear-gradient(gainsboro, whitesmoke);
+          }
+
+          span {
+               font-size: 1rem;
+               font-weight: bolder;
+               font-family: 'Courier New', Courier, monospace;
+
+          }
+
+          .btns {
+               margin-left: 20px;
+               width: 200px;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="center" id="myForm">
+          <input type="number" id="num1" placeholder="Enter the first number">
+          <br> <br>
+          <input type="number" id="num2" placeholder="Enter the second number">
+          <br><br>
+          <span id="output" style="padding-left: 10px;"></span>
+          <br><br>
+          <div class="btns">
+               <input type="submit" value="+" id="add" onclick="Add()">
+               <input type="submit" value="-" id="sub" onclick="Sub()">
+               <input type="submit" value="*" id="multi" onclick="Multi()">
+               <input type="submit" value="/" id="div" onclick="Div()">
+               <input type="submit" value="%" id="mod" onclick="Mod()">
+          </div>
+     </div>
+
+     <script>
+          // Calculator
+          // Addition
+          function Add() {
+               let number1 = document.getElementById('num1').value;
+               let number2 = document.getElementById('num2').value;
+               document.getElementById('output').innerHTML = parseFloat(number1) + parseFloat(number2);
+               return false; // prevent form submission
+          }
+          // Subtraction
+          function Sub() {
+               let number1 = document.getElementById('num1').value;
+               let number2 = document.getElementById('num2').value;
+               document.getElementById('output').innerHTML = parseFloat(number1) - parseFloat(number2);
+               return false; // prevent form submission
+          }
+          // Multiplication
+          function Multi() {
+               let number1 = document.getElementById('num1').value;
+               let number2 = document.getElementById('num2').value;
+               document.getElementById('output').innerHTML = parseFloat(number1) * parseFloat(number2);
+               return false; // prevent form submission
+          }
+          // Division
+          function Div() {
+               let number1 = document.getElementById('num1').value;
+               let number2 = document.getElementById('num2').value;
+               document.getElementById('output').innerHTML = parseFloat(number1) / parseFloat(number2);
+               return false; // prevent form submission
+          }
+          // Modulus
+          function Mod() {
+               let number1 = document.getElementById('num1').value;
+               let number2 = document.getElementById('num2').value;
+               document.getElementById('output').innerHTML = parseFloat(number1) % parseFloat(number2);
+               return false; // prevent form submission
+          }
+     </script>
+
+</body>
+
+</html>
